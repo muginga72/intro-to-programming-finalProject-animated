@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eli James Portfolio</title>
+  <meta name="author" content="Laurindo Muginga" />
+  <meta name="description" content="Portfolio website for Eli James" />
+  <meta name="keywords" content="Eli James, Portfolio, Personal Website, Final Project" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1 class="name"><a href="#">Eli James</a></h1>
+    <ul class="main-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#message">Leave a Message</a></li>
+    </ul>
+  </header>
+
+  <div class="logo">
+    <ul class="menu">
+      <li class="image">
+        <img class="image--rounded" src="img/profile-pic.jpg" role="presentation"/>
+      </li>
+      <li class="profile-name">Eli James</a></li>
+    </ul>
+  </div>
+
+  <section id="about">
+
+    <h1>About</h1>
+    <p>I'm currently taking the software developer course with Code the Dream.</p>
+    <p>I like the feeling to overcome coding challenges every time I get back to my computer.</p>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="box3">
+      <ul id="skillsList">
+        <!-- inserted <li id="skill"> tag with JavaScript-->
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+
+    <h1>Experience</h1>
+    <div class="experience">
+      <div class="role-1">
+        Qwiklabs Projects in Google Cloud with Coursera
+        <strong> June 2020 - May 9, 2021</strong>
+      </div>
+      <div class="role-2">
+        Geologist and Geophysicist
+        <strong> June 2004 - December 2016</strong>.
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <!--
+        insert Repository with JS retrieving it from GitHub API via Fetch
+      -->
+    </ul>
+  </section>
+
+  <section id="message">
+    <h1>Leave a Message</h1>
+    <form name="leave_message">
+      <div class="leave-a-message">
+        <div class="item-1">
+          <label for="name"><strong>Name</strong></label><br>
+          <input type:"text" name="name" required=true placeholder="Enter your name"><br>
+        </div>
+        <div class="item-2">
+          <label for="mail"><strong>Email Address</strong></label><br>
+          <input type:"email" name="email" required=true placeholder="Enter your email address"><br>
+        </div>
+        <div class="item-3">
+          <label for="message"><strong>Message</strong></label><br>
+          <textarea name="message" required=true placeholder="Leave me a message"></textarea><br>
+        </div>
+        <button id="submitButton" type="submit"><strong>Submit</strong></button>
+      </div>
+      </div>
+    </form>
+  </section>
+
+  <section id="messages" hidden>
+    <h3>Messages</h3>
+    <ul id="newMessage">
+      <!-- inserted <li id="message"> tag with JavaScript-->
+    </ul>
+  </section>
+
+  <footer>
+    <div class="main-footer">
+      <p id="copyright">
+        <!--Previews: was inserted copyright, name and year with JavaScript-->
+      </p>
+      <ul class="item-A">
+
+        <li class="box2">
+          <a class="link link--no--color" href="https://twitter.com/ElijamesMg" target="_blank" title="twitter">
+            <i class="fa fa-twitter"></i></a>
+        </li>
+
+        <li class="box1">
+          <a class="link link--no--color" href="https://www.linkedin.com/in/eli-james-47626921b/" target="_blank" title="linkedIn">
+            <i class="fa fa-linkedin"></i></a>
+        </li>
+
+        <li class="box3"><a class="link link--no--color" href="mailto:mg.elijames@gmail.com" target="_blank" title="gmail">
+            <i class="fa fa-google"></i></a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

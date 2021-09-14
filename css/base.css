@@ -1,0 +1,111 @@
+/* =============== Base Element Styles ================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+a:link {
+  color:rgb(37, 155, 209);
+  text-decoration: none;
+}
+
+a:visited, .main-nav {
+  color: peru;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: .95em;
+  margin: 20px;
+  text-align: center;
+}
+
+h2,
+h3,
+a {
+  color: #093a58;
+}
+
+h2,
+h3 {
+  margin: .8em 0 .8em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: #1298eb;
+}
+/* will applay to all sections in html.*/
+section {
+  margin: 20px;
+}
+
+/* ================= Media Queries =================== */
+@media (min-width: 769px) {
+
+  .main-header,
+  .row,
+  .col {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav,
+  .row,
+  .col {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

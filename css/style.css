@@ -1,0 +1,268 @@
+/*================= Style CSS ========================*/
+.logo {
+    color: #fff;
+    width: 100%;
+    background: #93c9c6;
+    padding: 0.5em;
+    margin-bottom: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+  
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-name {
+    text-align: center;
+    grid-row: 1px 3px;
+    margin: 10px;
+  }
+  
+  .image--rounded {
+    width: 200px; /*works well for all devices*/
+    border-radius: 50%;
+    border: 3px solid rgb(197, 212, 205);
+  }
+  
+  /* ---- Navigation ---- */
+  .name {
+    font-size: 1.35rem;
+    margin: 0;
+  }
+  
+  .name a,
+  .main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+  }
+  
+  .main-nav a {
+    margin-top: 5px;
+    font-size: .95em;
+    color: #3acec2;
+    text-transform: uppercase;
+  }
+  
+  .main-nav a:hover {
+    color: #093a58;
+  }
+  
+  .main-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+  
+  /* footer class name */
+  .item-A {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* footer class names */
+  .box1, .box2, .box3 {
+    margin: 20px;
+  }
+  
+  .feat-img {
+    border-radius: 5px;
+  }
+  
+  .button {
+    color: #fff;
+    text-align: center;
+    padding: .625em 1.25em;
+    background: #3acec2;
+    border-radius: .35em;
+  }
+  
+  /*===========================================*/
+  svg {
+    vertical-align: middle;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .fa {
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px;
+    border-radius: 50%;
+  }
+  
+  .fa_custom {
+    color: black;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  /* Transform the "Skills" list items into styled blocks */
+  #skills li {
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bolder;
+    display: inline-block;
+    writing-mode: horizontal-tb;
+    margin: 6px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+  }
+
+#skillsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+  
+  /* ============ Experience section ================ */
+  .experience {
+    max-width: auto;
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-template-rows: auto;
+    margin: 8px;
+    padding: 5px;
+    background-color: whitesmoke;
+  }
+  
+  .role-1,
+  .role-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 8px;
+  }
+  
+  /* =============== Projects ================ */
+  .projects {
+    list-style-type: none;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    margin: 20px;
+  }
+  
+  /* Style the "Leave a Message" form elements */
+  label {
+    color: black;
+    font-size: 1.3rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  
+  /* Change padding, background color, border, etc. of submit button */
+  #submitButton {
+    display: grid;
+    flex: 1;
+    font-size: 1.0rem;
+    text-align: center;
+    width: 22%;
+    color: white;
+    border: blue;
+    border-width: 16px;
+    flex-direction: column;
+    margin-top: auto;
+    align-self:center;
+    background-color: blue;
+    border-radius: 5px;
+  } 
+  
+  /* Transform the "Messages" list items into styled blocks and customize the button(s)*/
+  #newMessage {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  button {
+    /* remove, edit and save buttons style */
+    font-size: 1.0rem;
+    color: white;
+    border: blue;
+    border-width: 16px;
+    margin: .25rem;
+    padding: .2rem;
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  .removeButton {
+    font-size: 1.0rem;
+    border-width: 16px;
+    margin: .25rem;
+    padding: .2rem;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .leave-a-message {
+    display: grid;
+    margin: 15px auto;
+    justify-content: center;
+    padding: 8px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 80px 80px;
+  }
+  
+  input, textarea {
+    width:80%;
+    margin: 10px;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
